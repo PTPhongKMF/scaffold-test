@@ -1,0 +1,31 @@
+{
+  "name": "aethereye",
+  "version": "0.1.0",
+  "description": "AetherEye is an offline-first, portable file and folder organizer with a robust tagging system. Effortlessly browse your content using tags and share your collections with others via import/export.",
+  "license": "AGPL-3.0-or-later",
+
+  "exports": "./README.md",
+
+  "tasks": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    
+    "tauri": "tauri"
+  },
+
+  "imports": {
+    "solid-js": "npm:solid-js@^1.9.9",
+
+    "@tauri-apps/api": "npm:@tauri-apps/api@^2.8.0",
+
+    "vite": "npm:vite@^7.1.6",
+    "vite-plugin-solid": "npm:vite-plugin-solid@^2.11.8",
+
+    "@tauri-apps/cli": "npm:@tauri-apps/cli@^2.8.4"
+  },
+
+  "compilerOptions": {
+  }
+}
