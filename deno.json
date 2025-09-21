@@ -11,14 +11,16 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    
+
     "tauri": "tauri"
   },
 
+  "nodeModulesDir": "auto",
   "imports": {
     "solid-js": "npm:solid-js@^1.9.9",
 
     "@tauri-apps/api": "npm:@tauri-apps/api@^2.8.0",
+    "@tauri-apps/plugin-opener": "npm:@tauri-apps/plugin-opener@^2.5.0",
 
     "vite": "npm:vite@^7.1.6",
     "vite-plugin-solid": "npm:vite-plugin-solid@^2.11.8",
@@ -27,5 +29,14 @@
   },
 
   "compilerOptions": {
+    "lib": ["esnext", "dom", "dom.iterable", "deno.ns"],
+
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   }
 }

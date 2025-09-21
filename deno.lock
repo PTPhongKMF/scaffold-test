@@ -3,6 +3,7 @@
   "specifiers": {
     "npm:@tauri-apps/api@^2.8.0": "2.8.0",
     "npm:@tauri-apps/cli@^2.8.4": "2.8.4",
+    "npm:@tauri-apps/plugin-opener@^2.5.0": "2.5.0",
     "npm:solid-js@^1.9.9": "1.9.9_seroval@1.3.2",
     "npm:vite-plugin-solid@^2.11.8": "2.11.8_solid-js@1.9.9__seroval@1.3.2_vite@7.1.6__picomatch@4.0.3_@babel+core@7.28.4",
     "npm:vite@^7.1.6": "7.1.6_picomatch@4.0.3"
@@ -486,6 +487,12 @@
       ],
       "bin": true
     },
+    "@tauri-apps/plugin-opener@2.5.0": {
+      "integrity": "sha512-B0LShOYae4CZjN8leiNDbnfjSrTwoZakqKaWpfoH6nXiJwt6Rgj6RnVIffG3DoJiKsffRhMkjmBV9VeilSb4TA==",
+      "dependencies": [
+        "@tauri-apps/api"
+      ]
+    },
     "@types/babel__core@7.20.5": {
       "integrity": "sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==",
       "dependencies": [
@@ -818,6 +825,7 @@
     "dependencies": [
       "npm:@tauri-apps/api@^2.8.0",
       "npm:@tauri-apps/cli@^2.8.4",
+      "npm:@tauri-apps/plugin-opener@^2.5.0",
       "npm:solid-js@^1.9.9",
       "npm:vite-plugin-solid@^2.11.8",
       "npm:vite@^7.1.6"
